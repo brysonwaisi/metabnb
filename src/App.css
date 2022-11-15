@@ -1,38 +1,295 @@
-.App {
-  text-align: center;
+:root {
+  --primary-purple: #A02279;
+  --primary-black: #233447;
+  --primary-white: #F1F3F9;
+
+  --linear-purple: #434343;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+html {
+  line-height: 1.6;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+body {
+  background-color: #fff;
+  font-family: 'Red Rose', serif;
+}
+
+a {
+  text-decoration: none;
+}
+
+h1 {
+  font-size: 3rem;
+  line-height: 140%;
+
+  color: #434343;
+}
+
+
+li {
+  list-style: none;
+}
+
+img {
+  max-width: 100%;
+}
+
+/* start of utilities */
+.purple {
+  color: #A02279;
+}
+
+.container {
+  width: min(90%, 1280px);
+  margin: 0 auto;
+}
+
+.row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.col {
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+
+
+
+input {
+  padding: 0.8em 0;
+  margin: 1em 0;
+
+}
+
+/* end of utilities */
+
+/* start of the navbar */
+
+header {
+  padding: 1em 0;
+}
+
+.logo {
+  margin-right: 1em;
+}
+
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  width: 100%;
+
+  /* border: 2px solid pink; */
+}
+
+
+.nav__list {
+  display: flex;
+  justify-content: space-around;
+  flex-shrink: 0;
+
+  flex-grow: 1;
+}
+
+.nav__item {
+  margin-left: 2em;
+  color: #434343;
+  font-size: 1.125rem;
+}
+
+.btn-cta {
+  display: inline-block;
+  background-color: #A02279;
+  color: #fff;
+  padding: 0.8em 1.6em;
+  border-radius: 10px;
+
+  flex-shrink: 0;
+  flex-grow: 1;
+}
+
+/* end of navbar */
+
+/* start of hero */
+
+.hero {
+  padding: 100px 0;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.hero__text {
+  width: 80%;
+  line-height: 35px;
+  letter-spacing: 1px;
+}
+
+.hero__text p {
+  font-size: 1.125rem;
+  line-height: 30px;
+  /* width: 80%; */
+  margin: 1.5em 0;
+}
+
+.form__area {
+  /* border: 3px green solid; */
+}
+
+.submit-location {
+  font-size: 1rem;
+  padding: 0.8em 4em;
+  display: inline-block;
+  background-color: #A02279;
+  color: #fff;
+
+  border-bottom-right-radius: 10px;
+  border-top-right-radius: 10px;
+  border: none;
+}
+
+.search-location {
+  width: 60%;
+  padding: 1em;
+
+  border-right: none;
+  border-bottom-left-radius: 10px;
+  border-top-left-radius: 10px;
+}
+
+.search-location[text] {
+  font-size: 1rem;
+}
+
+.hero__image {
+  /* width: 100%; */
+  align-self: stretch;
+  flex-wrap: wrap;
+  margin-left: 2em;
+
+  flex: 0 0 600px;
+  margin-right: 0;
+}
+
+/* logos section */
+.logo__area {
+  background-color: #A02279;
+  padding: 1em 0;
+
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+/* bnb section */
+.bnb {
+  padding: 3em 0;
+}
+
+.inspiration {
+  text-align: center;
+  margin-bottom: 1em;
+  color: #1D1D1E;
+}
+
+.grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2em;
+
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.grid-item {
+  border: 2px solid gray;
+  border-radius: 10px;
+
+  padding: 1em;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+/* end of bnb section */
+
+/* cta section */
+
+.cta {
+  background-color: #A02279;
+
+  color: #fff;
+  padding: 4em 0;
 }
+
+.btn-learn-more {
+  padding: .75em 2em;
+
+  font-size: 1rem;
+  background-color: #fff;
+  color: #A02279;
+
+  border-radius: 10px;
+  border: none;
+
+}
+
+.text__section {
+  width: 40%;
+}
+
+.text__section h2 {
+  font-size: 3rem;
+  margin-bottom: 1em;
+}
+
+.text__section p {
+  font-size: 1.125rem;
+  margin-bottom: 1em;
+  width: 90%;
+}
+
+.img__section {}
+
+/* end of cta section */
+
+
+
+/* footer section */
+
+footer {
+  background-color: #1D1D1E;
+  color: #fff;
+
+  padding: 3em 0;
+}
+
+.social__media {
+  margin: 3em 0;
+}
+
+.social__media img+img {
+  margin-left: 1em;
+}
+
+.community,
+.places,
+.about {
+  align-self: flex-start;
+  text-align: left;
+}
+
+
+.footer__links {
+  color: #FFF;
+}
+
+/* end of footer */
