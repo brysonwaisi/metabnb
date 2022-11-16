@@ -1,13 +1,13 @@
 import { Routes, Route } from "react-router-dom"
 import Home from "./components/pages/Home"
-import Places from "./components/pages/places/Places"
+import PlacesToStay from "./components/pages/places/PlacesToStay"
 import './App.css'
 function App() {
   return (
     <>
       <Routes>
         <Route path="/" element={<Home />} />
-        <Route path="/places" element={<Places />} />
+        <Route path="/placestostay" element={<PlacesToStay />} />
       </Routes>
     </>
   )
