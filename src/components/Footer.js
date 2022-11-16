@@ -5,7 +5,7 @@ import twitter from "../assets/twitter-241-721979.png"
 export default function Footer() {
     return (
         <footer>
-            <div className="container row">
+            <div className="container footer">
                 <div className="socials">
                     <img src={darkLogo} alt="metabnb logo" />
                     <div className="social__media">
